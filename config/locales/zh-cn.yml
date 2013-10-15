@@ -1,0 +1,9 @@
+zh-CN:
+  title: "名称"
+  events: "赛事"
+  position: "位置"
+  outcomes: "赛事结果"
+  description: "描述"
+  back_to_top: "回到顶部"
+  events_for: "\"%{sport}\" 赛事"
+  outcomes_for: "\"%{event}\" 结果"

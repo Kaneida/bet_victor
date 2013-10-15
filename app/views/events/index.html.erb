@@ -1,0 +1,25 @@
+<h3><%= t("events_for", :sport => @sport.title)%></h3>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>ID</th>
+      <th><%= t("title") %></th>
+      <th><%= t("position") %></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @events.each_with_index do |e, i| %>
+      <tr>
+        <td><%= i+1 %></td>
+        <td><%= e.id %></td>
+        <td><%= e.title %></td>
+        <td><%= e.pos %></td>
+        <td><%= link_to t("outcomes"), sport_event_path(@sport.id, e.id) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

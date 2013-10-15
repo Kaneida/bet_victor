@@ -1,0 +1,11 @@
+<div>
+  ID: <%= @sport.id %>
+</div>
+
+<div>
+  <%= t("title")%>: <%= @sport.title %>
+</div>
+
+<div>
+  <%= link_to t("events"), sport_events_path(@sport.id) %>
+</div>

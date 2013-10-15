@@ -1,1 +1,21 @@
-here comes the sports#index page
+<table class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>ID</th>
+      <th><%= t("title")%></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sports.each_with_index do |s, i| %>
+      <tr>
+        <td><%= i+1 %></td>
+        <td><%= link_to s.id, sport_path(s.id) %></td>
+        <td><%= s.title %></td>
+        <td><%= link_to t("events"), sport_events_path(s.id) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

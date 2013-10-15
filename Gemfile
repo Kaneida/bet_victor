@@ -26,6 +26,11 @@ gem 'jquery-rails'
 
 gem 'figaro'
 
+group :development, :test do
+  gem "debugger", :require => "ruby-debug"
+end
+
 group :test do
   gem 'rspec-rails'
+  gem 'webmock'
 end

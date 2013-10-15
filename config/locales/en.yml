@@ -2,4 +2,11 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  title: "Title"
+  events: "Events"
+  position: "Position"
+  outcomes: "Outcomes"
+  description: "Description"
+  back_to_top: "Back To Top"
+  events_for: "Events For \"%{sport}\""
+  outcomes_for: "Outcomes for \"%{event}\""
