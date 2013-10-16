@@ -1,13 +1,10 @@
 class Event
-  attr_accessor :id, :title, :pos, :outcomes
+  attr_accessor :id, :sport_id, :title, :pos
 
   def initialize(args)
-    @id = args["id"]
-    @title  = args["title"]
-    @pos = args["pos"]
-
-    @outcomes = args["outcomes"].to_a.inject([]) do |outcomes, o|
-      outcomes << Outcome.new(o)
-    end
+    @id = args[:id]
+    @sport_id = args[:sport_id]
+    @title  = args[:title]
+    @pos = args[:pos]
   end
 end

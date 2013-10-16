@@ -22,4 +22,10 @@ class ApplicationController < ActionController::Base
       I18n.locale = session["locale"]
     end
   end
+
+  def api_client
+    # we need to instantiate a new ApiClient for every request
+
+    BetVictor::ApiClient.new
+  end
 end
